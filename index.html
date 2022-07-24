@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#a6948e">
+    <meta name="theme-color" content="#786b67">
+    <title>Запрошення</title>
+    <link rel="icon" sizes="192x192" href="img/panda-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="jquery.fullpage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Exo+2:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+    <div class="preloader ">
+        <img class="preloader__gif animate__animated animate__bounceOut  animate__delay-2s"
+            src="img/tumblr_01baa300c59ec7081bc58f7a7e9207a7_0dd5e89f_400.gif" alt="gif">
+    </div>
+    <div id="fullpage">
+
+        <section class="header section">
+            <div class="header__heading">
+                <h1 class="animate__animated animate__tada animate__delay-3s">pandas wedding</h1>
+            </div>
+
+            <!-- for max-width 600px -->
+            <div class="header__heading_mob">
+                <h1 class="animate__animated animate__bounceInLeft  animate__delay-3s ">pandas</h1>
+                <h1 class="animate__animated animate__bounceInRight animate__delay-3s ">wedding</h1>
+            </div>
+
+        </section>
+
+        <section class="main section">
+            <div class="main__wrap">
+                <img class="main__panda" src="img/panda.png" alt="panda">
+                <div class="main__message animate__animated animate__rollIn animate__delay-6s ">
+                    <span class="main__message_phone-btn"></span>
+                    <div class="message__icon">
+                        <img src="img/panda.png" alt="">
+                    </div>
+                    <div class="message__text ">
+                        <div id="typed-strings">
+                            <p></p>
+                            <p>Привіт. 10 липня 2021 року о 13-й годині відбудеться важлива для нас подія — наше
+                                весілля.<br> Тож збираємо друзів як слід обмити це!<br> Хто не з нами, той
+                                москаль:)</p>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="location section">
+            <figure class="location__forrest">
+                <div class="location__img forrestOnMap">
+                    <img src="img/forrest.jpg" alt="img">
+                </div>
+                <figcaption>
+                    <p>Урочиста церемонія та святкування відбудуться в одному місці!</p>
+                    <p>Макарів</p>
+                    <p>Комплекс для відпочинку</p>
+                    <h2>ForRest</h2>
+                </figcaption>
+            </figure>
+            <figure class="location__night">
+                <div class="location__img nightOnMap">
+                    <img src="img/night.jpg" alt="img">
+                </div>
+                <figcaption>
+                    <p>Немісцеві гості матимуть змогу заночувати в</p>
+                    <p>мотелі</p>
+                    <h2>Night City</h2>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="footer section">
+            <h1 class="footer__left">10 липня о 13:00</h1>
+            <h1 class="footer__right">Будемо раді бачити!</h1>
+        </section>
+    </div> <!-- /fullpage -->
+
+    <div class="forrest-pop-up ">
+        <div class="exit">&times;</div>
+        <div class="pop-up__map animate__animated animate__zoomInUp">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.2929590995536!2d29.802326076048246!3d50.45051039162647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b4142b4e56a53%3A0xfc320282d6bedcd2!2sForRest!5e0!3m2!1suk!2sua!4v1621638410167!5m2!1suk!2sua"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="night-pop-up ">
+        <div class="exit">&times;</div>
+        <div class="pop-up__map animate__animated animate__zoomInUp">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5872.8883834450835!2d29.788931003504093!3d50.42992678269273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b4150fced4f6f%3A0xa848475afa211d61!2z0J3RltGH0L3QtSDQvNGW0YHRgtC-!5e0!3m2!1suk!2sua!4v1621638301686!5m2!1suk!2sua"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!--JS-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.fullpage.min.js"></script>
+    <script src="typed.min.js"></script>
+    <script src="myJs.js"></script>
+
+</body>
